@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body, ul {
+  margin:0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  position:relative;
+}
+
+ul {
+  list-style-type:none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+  margin:0 auto;
+  padding: 0 30px;
+}

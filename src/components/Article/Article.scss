@@ -1,0 +1,249 @@
+article {
+	height: 0;
+	width:200px;
+	margin:15px;
+	border-radius: 10px;
+	overflow: hidden;
+	position:relative;
+	transition: height 1s linear;
+
+	div.wrapper {
+		height: 0;
+	}
+
+	&:hover {
+		width: 220px;
+		height: 250px;
+		box-shadow: 10px 10px 8px #888888;
+
+		p{
+			font-size:16px;
+			color: red;
+		}
+	}
+
+	div {
+		width:100%;
+		overflow: hidden;
+		position: absolute;
+		border-radius: 10px;
+		top: 45px;
+	}
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+
+	p {
+		z-index: 5;
+		margin: 10px auto;
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
+main.characters, main.comics, main.creators, main.series {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+
+	article {
+		width:20%;
+		border-radius: 0 20% 20%;
+		background: rgba(0,0,0,0.7);
+
+		&:hover {
+			width: 25%;
+			height: 285px;
+		}
+
+		div {
+			border-radius: 0;
+			bottom: 0;
+		}
+
+		img {
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:auto;
+		}
+
+		p {
+			font-width:bold;
+			color:#fff;
+			text-align:left;
+			padding-left:20px;
+		}
+	}
+}
+
+main.characters {
+	background-image: url(../../images/backgrounds/background1.jpg);
+
+}
+
+main.comics {
+	background-image: url(../../images/backgrounds/background2.jpg);
+}
+
+main.creators {
+	background-image: url(../../images/backgrounds/marvel-nawpic-2-scaled.jpg);
+}
+
+main.series {
+	background-image: url(../../images/backgrounds/marvel-wallpaper-1.jpg);
+}
+
+@media all and (max-width:860px) {
+	main.characters, main.comics, main.creators, main.series {
+		article {
+			width:25%;
+
+			&:hover {
+				width: 30%;
+				height: 260px;
+			}
+		}
+	}
+}
+
+@media all and (max-width:600px) {
+	main.characters, main.comics, main.creators, main.series {
+		article {
+			width:43%;
+			height: 260px;
+
+			&:hover {
+				width: 43%;
+				height: 260px;
+			}
+		}
+	}
+}
+
+@media all and (max-width:500px) {
+	main.characters, main.comics, main.creators, main.series {
+		article {
+			width:100%;
+			height: 400px;
+
+			&:hover {
+				width: 100%;
+				height: 400px;
+			}
+		}
+	}
+}
+
+main.stories {
+	background-image: url(../../images/backgrounds/wp3694545.jpg);
+	article {
+		width:40%;
+		height:auto;
+		border-radius: 0 20% 20%;
+		background: rgba(0,0,0,0.7);
+
+		&:hover {
+			width: 45%;
+			height: 110%;
+		}
+
+		p {
+			font-width:bold;
+			color:#fff;
+			text-align:left;
+			padding-left:20px;
+		}
+	}
+}
+
+main.search {
+	section {
+		flex-wrap:wrap;
+
+		article {
+			width:20%;
+			height:200px;
+			border-radius: 0 20% 20% 20%;
+
+			&:hover {
+				width: 22%;
+				height: 220px;
+
+				p {
+					font-size:16px;
+					color: #fff;
+				}
+			}
+
+			div {
+				border-radius: 0;
+				bottom:0;
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media all and (max-width:900px) {
+	main.search {
+		section {
+			article {
+				width:27%;
+				height:230px;
+				margin:15px;
+				border-radius: 0 20% 20% 20%;
+
+					&:hover {
+					width: 30%;
+					height: 260px;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width:700px) {
+	main.search {
+		section {
+			article {
+				width:42%;
+				height:300px;
+				margin:15px;
+				border-radius: 0 20% 20% 20%;
+
+					&:hover {
+					width: 45%;
+					height: 320px;
+				}
+
+				img {
+					height:auto;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width:550px) {
+	main.search {
+		section {
+			article {
+				width:100%;
+				height:350px;
+
+					&:hover {
+					width: 100%;
+					height: 350px;
+				}
+			}
+		}
+	}
+}
